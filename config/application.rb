@@ -1,5 +1,5 @@
 
-require_relative 'boot'
+require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
@@ -21,9 +21,10 @@ module Splurty
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
     # Precompile additional assets
-    config.assets.precompile += %w( .svg .eot .woff .t
+    config.assets.precompile += %w( .svg .eot .woff .ttf )
+
   
-  end
+ end
 end
 
 
