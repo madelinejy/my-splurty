@@ -22,3 +22,5 @@ end
   end
 end
 
+def about
+end
